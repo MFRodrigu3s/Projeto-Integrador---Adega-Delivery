@@ -1,0 +1,42 @@
+#banner-boasVindas {
+    background-image: url('../images/fundo-de-bar.jpg');
+    background-size: cover;
+    background-position: 0 55%;
+    position: relative;
+    margin-top: 100px;
+    height: 35vh;
+    padding-top: 20vh;
+    padding-bottom: 30vh;
+}
+
+#container-texto-boasVindas {
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    color: antiquewhite;
+}
+
+#container-texto-boasVindas h1 {
+    background-color: rgb(160, 1, 1, 0.9);
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    border: groove 10px rgb(216, 216, 216);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#container-texto-boasVindas p {
+    background-color: rgb(160, 1, 1, 0.9);
+    font-size: 1.2rem;
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: groove 5px rgb(216, 216, 216);
+    border-radius: 8px;
+}
+
