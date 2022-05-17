@@ -1,0 +1,64 @@
+header {
+    position: relative;
+    top: 0;
+    height:auto;
+}
+
+nav {
+    background-color: rgb(160, 1, 1);
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    border: 1px solid black;
+    opacity: 0.9;
+}
+
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#nav-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-container h1 {
+    width: fit-content;
+    height: fit-content;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+#lista-Nav {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+#lista-Nav li {
+    list-style: none;
+    float: left;
+    margin: 5px 15px;
+}
+
+#lista-Nav a {
+    text-decoration: none;
+    color:white;
+}
+
+#lista-Nav a:hover {
+    color: black;
+}
+
