@@ -5,8 +5,8 @@
     position: relative;
     margin-top: 100px;
     height: 35vh;
-    padding-top: 20vh;
-    padding-bottom: 30vh;
+    padding-top: 10vh;
+    padding-bottom: 40vh;
 }
 
 #container-texto-boasVindas {
@@ -40,3 +40,15 @@
     border-radius: 8px;
 }
 
+#botoes-criarConta-logar {
+    color: antiquewhite;
+    background-color: rgb(160, 1, 1, 0.9);
+    border: groove 5px rgb(216, 216, 216);
+    border-radius: 8px;
+    width: fit-content;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
