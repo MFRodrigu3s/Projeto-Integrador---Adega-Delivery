@@ -1,0 +1,166 @@
+
+
+/* body {
+    background-image: url('../images/fundo-de-bar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container-principal{
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#div-fotoForm {
+    background-color: bisque;
+    height: 100%;
+    width: 30vw;
+}
+
+#foto-form {
+    width: 100%;
+    height: 100%;
+}
+
+#div-form {
+    background-color: aquamarine;
+    width: 40%;
+}
+
+#style-form {
+    background-color: #bdb76b;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form-login {
+    background-color: darkgreen;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-form {
+    margin-top: 5vh;
+}
+
+.input-form {
+    margin-top: 10px;
+    height: 5vh;
+}
+
+.input-form::placeholder {
+    
+}
+
+#button-submit {
+    margin-top: 5vh;
+}
+
+h1{
+    background-color: blue;
+} */
+
+body {
+    background-image: url('../images/fundo-de-bar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    background-color: rgb(160, 1, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border: 10px solid rgb(204, 174, 174);
+    box-shadow: 0 0 20px 10px;
+}
+
+#marca-logo{
+    display: flex;
+    align-items: center;
+}
+
+#marca {
+    margin-top: 10px;
+    margin-left: 12px;
+    color: antiquewhite;
+    font-size: 16px;
+}
+
+#marca a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+#marca a:hover {
+    color: black;
+}
+
+#logo{
+    width: 70px;
+    height: auto;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#login form input {
+    margin-top: 15px;
+    height: 5vh;
+    width: 28vw;
+}
+
+#login form input::placeholder {
+    color: black;
+}
+
+.titulo {
+    font-size: 3rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+#login form button {
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    height: 5vh;
+    width: 40%;
+}
+
+#login p {
+    color: antiquewhite;
+}
+
+#login p a {
+    color: antiquewhite;
+}
+
+#login p a:hover {
+    color: black;
+}
