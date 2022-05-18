@@ -1,11 +1,19 @@
 const usuarioController = {
-    login: (req, res) => {
+    telaLogin: (req, res) => {
         res.render('login')
     },
-    cadastro: (req, res) => {
+    // loginValidado: async (req, res) => {
+
+    // },
+    telaCadastro: (req, res) => {
         res.render(cadastro)
     }, 
-    minhaConta: (req, res) => {
+    // cadastroValidado: async (req, res) => {
+
+    // },
+    telaMinhaConta: (req, res) => {
         res.render('minhaConta')
     }
 }
+
+module.exports = usuarioController
