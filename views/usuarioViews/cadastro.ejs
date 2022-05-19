@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+
+<body>
+    <section id="container">
+        <div id="cadastro">
+            <div id="marca-logo">
+                <div>
+                    <img id="logo" src="/images/balcao-de-bar.png" alt="logo">
+                </div>
+                <div>
+                    <h1 id="marca"> <a href="">ADEGA DELIVERY</a></h1>
+                </div>
+            </div>
+            <h1 id="titulo">Cadastro</h1>
+            <p>Já possui uma conta? <a href="#">Faça Login</a></p>
+
+            <form action="/cadastroValidado">
+                <div id="organizador">
+                    <div class="form-style">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+        
+                        <label for="aniversario">Data de Nascimento:</label>
+                        <input type="text" name="aniversario" id="aniversario">
+                    </div>
+    
+                    <div class="form-style">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome">
+        
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha">
+
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf">
+                    </div>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+            
+        </div>
+    </section>
+</body>
+
+</html>
