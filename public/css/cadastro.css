@@ -1,0 +1,115 @@
+body {
+    background-image: url('../images/fundo-de-bar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label {
+    margin-top: 2vh;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    width: fit-content;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cadastro {
+    background-color: rgb(160, 1, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 80vh;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border: 10px double rgb(204, 174, 174);
+    border-radius: 8px;
+    box-shadow: 0 0 20px 10px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+#marca-logo{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 55px;
+    height: auto;
+}
+
+#marca {
+    margin-top: 10px;
+    margin-left: 12px;
+    color: antiquewhite;
+    font-size: 12px;
+}
+
+#marca a {
+    color: antiquewhite;
+}
+
+#marca a:hover {
+    color: black;
+}
+
+#titulo {
+    font-size: 3rem;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+#cadastro form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#organizador {
+    display: flex;
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+#cadastro form input {
+    margin-top: 15px;
+    height: 5vh;
+    width: 28vw;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#cadastro form button {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    height: 6vh;
+    width: 20%;
+}
+
+#cadastro p {
+    color: antiquewhite;
+}
+
+#cadastro p a {
+    color: antiquewhite;
+}
+
+#cadastro p a:hover {
+    color: black;
+}
