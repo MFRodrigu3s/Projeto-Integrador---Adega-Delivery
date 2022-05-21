@@ -12,7 +12,7 @@ body {
 }
 
 #login {
-    background-color: rgb(160, 1, 1);
+    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@ body {
     height: auto;
     padding-top: 25px;
     padding-bottom: 30px;
-    border: 10px solid rgb(204, 174, 174);
+    border: 10px solid rgb(160, 1, 1);
     box-shadow: 0 0 20px 10px;
 }
 
@@ -33,13 +33,13 @@ body {
 #marca {
     margin-top: 10px;
     margin-left: 12px;
-    color: antiquewhite;
+    color: rgb(160, 1, 1);
     font-size: 16px;
 }
 
 #marca a {
-    text-decoration: none;
-    color: antiquewhite;
+    /* text-decoration: none; */
+    color: rgb(160, 1, 1);
 }
 
 #marca a:hover {
@@ -72,7 +72,7 @@ body {
     font-size: 3rem;
     margin-top: 40px;
     margin-bottom: 40px;
-    color: antiquewhite;
+    color: rgb(160, 1, 1);
     text-decoration: underline;
 }
 
@@ -81,14 +81,21 @@ body {
     margin-bottom: 4vh;
     height: 5vh;
     width: 40%;
+    background-color: rgb(160, 1, 1);
+}
+
+#login form button p {
+    color: antiquewhite;
+    font-size: 1rem;
 }
 
 #login p {
-    color: antiquewhite;
+    font-size: 1.2rem;
+    color: rgb(160, 1, 1);
 }
 
 #login p a {
-    color: antiquewhite;
+    color: rgb(160, 1, 1);
 }
 
 #login p a:hover {

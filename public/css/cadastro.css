@@ -7,7 +7,7 @@ body {
 label {
     margin-top: 2vh;
     font-size: 1.5rem;
-    color: antiquewhite;
+    color:black;
     width: fit-content;
 }
 
@@ -19,7 +19,7 @@ label {
 }
 
 #cadastro {
-    background-color: rgb(160, 1, 1);
+    background-color: #ffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@ label {
     height: 80vh;
     padding-top: 25px;
     padding-bottom: 30px;
-    border: 10px double rgb(204, 174, 174);
+    border: 10px solid rgb(160, 1, 1);
     border-radius: 8px;
     box-shadow: 0 0 20px 10px;
     margin-left: 10vh;
@@ -49,12 +49,12 @@ label {
 #marca {
     margin-top: 10px;
     margin-left: 12px;
-    color: antiquewhite;
+    color: rgb(160, 1, 1);
     font-size: 12px;
 }
 
 #marca a {
-    color: antiquewhite;
+    color: rgb(160, 1, 1);
 }
 
 #marca a:hover {
@@ -65,8 +65,7 @@ label {
     font-size: 3rem;
     margin-top: 4vh;
     margin-bottom: 1vh;
-    color: antiquewhite;
-    text-decoration: underline;
+    color: rgb(160, 1, 1);
 }
 
 #cadastro form {
@@ -91,8 +90,6 @@ label {
     margin-top: 15px;
     height: 5vh;
     width: 28vw;
-    border: 2px solid black;
-    border-radius: 8px;
 }
 
 #cadastro form button {
@@ -100,16 +97,43 @@ label {
     margin-bottom: 4vh;
     height: 6vh;
     width: 20%;
+    background-color: rgb(160, 1, 1);
+    color: antiquewhite;
+    border: 2px solid rgb(160, 1, 1);
 }
 
 #cadastro p {
-    color: antiquewhite;
+    color:rgb(160, 1, 1);
 }
 
 #cadastro p a {
-    color: antiquewhite;
+    color: rgb(160, 1, 1);
 }
 
 #cadastro p a:hover {
     color: black;
+}
+
+/* MANIPULAÇÂO DE DOM */
+
+.invalido {
+    border: 2px red solid
+}
+
+.senhaFraca {
+    border: 2px red solid
+}
+
+.senhaMedia {
+    border: 2px rgb(255, 255, 0) solid
+}
+
+.senhaForte {
+    border: 2px green solid
+}
+
+.msgError {
+    display: none;
+    font-size: 1.2rem;
+    color: crimson;
 }
