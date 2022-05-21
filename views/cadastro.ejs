@@ -24,35 +24,35 @@
             <h1 id="titulo">Cadastro</h1>
             <p>Já possui uma conta? <a href="#">Faça Login</a></p>
 
-            <form action="/cadastroValidado">
+            <form action="/cadastroValidado" id="formulario">
                 <div id="organizador">
                     <div class="form-style">
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome">
+                        <label for="nome" id="label-nome"> Nome:<i class="msgError"> Este campo é obrigatório</i></label>
+                        <input type="text" name="nome" id="input-nome">
 
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
+                        <label for="email" id="label-email">Email:</label>
+                        <input type="email" name="email" id="input-email">
         
-                        <label for="aniversario">Data de Nascimento:</label>
-                        <input type="text" name="aniversario" id="aniversario">
+                        <label for="aniversario" id="label-aniver">Data de Nascimento:</label>
+                        <input type="text" name="aniversario" id="input-aniver">
                     </div>
     
                     <div class="form-style">
-                        <label for="sobrenome">Sobrenome:</label>
-                        <input type="text" name="sobrenome" id="sobrenome">
+                        <label for="sobrenome" id="label-sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="input-sobrenome">
         
-                        <label for="senha">Senha:</label>
-                        <input type="password" name="senha" id="senha">
+                        <label for="senha" id="label-senha">Senha:</label>
+                        <input type="password" name="senha" id="input-senha">
 
-                        <label for="cpf">CPF:</label>
-                        <input type="text" name="cpf" id="cpf">
+                        <label for="cpf" id="label-cpf">CPF:</label>
+                        <input type="text" name="cpf" id="input-cpf">
                     </div>
                 </div>
                 <button type="submit">Cadastrar</button>
             </form>
-            
         </div>
     </section>
+    <script src="/js/domCadastro.js"></script>
 </body>
 
 </html>
