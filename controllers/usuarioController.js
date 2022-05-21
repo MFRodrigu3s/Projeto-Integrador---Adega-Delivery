@@ -6,7 +6,7 @@ const usuarioController = {
 
     // },
     telaCadastro: (req, res) => {
-        res.render(cadastro)
+        res.render("cadastro")
     }, 
     // cadastroValidado: async (req, res) => {
 
