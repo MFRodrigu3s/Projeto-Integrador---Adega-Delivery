@@ -4,9 +4,16 @@ const usuarioController = {
     telaLogin: (req, res) => {
         res.render('login')
     },
-    // loginValidado: async (req, res) => {
-
-    // },
+    realizarLogin: async (req, res) => {
+        const {email, senha} = req.body
+        const testarEmail = await Usuario.findOne({where: {email: email}})
+        const testarSenha = await Usuario.findOne({where: {senha: senha}})
+        if(testarEmail && testarSenha){
+            res.send("Logado!")
+        } else {
+            console.log(testarEmail, testarSenha)
+        }
+    },
     telaCadastro: (req, res) => {
         res.render("cadastro")
     },
