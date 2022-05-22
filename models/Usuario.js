@@ -20,7 +20,7 @@ const Usuario = (sequelize, DataTypes) => {
        }
     }, {
         tableName: "usuarios",
-        timesTamps: false
+        timestamps: false
     })
     return usuario
 }
