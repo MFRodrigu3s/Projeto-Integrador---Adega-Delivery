@@ -1,0 +1,28 @@
+const Usuario = (sequelize, DataTypes) => {
+    const usuario = sequelize.define('Usuario', {
+       nome_completo: {
+           type: DataTypes.STRING,
+           allowNull: false,
+       },
+       cpf: {
+           type: DataTypes.INTEGER,
+           allowNull: false,
+           unique: true
+       },
+       email: {
+           type: DataTypes.STRING,
+           allowNull: false,
+           unique: true
+       },
+       senha: {
+           type: DataTypes.INTEGER,
+           allowNull: false,
+       }
+    }, {
+        tableName: "usuarios",
+        timesTamps: false
+    })
+    return usuario
+}
+
+module.exports = Usuario
