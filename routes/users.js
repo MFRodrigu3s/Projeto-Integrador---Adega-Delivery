@@ -6,6 +6,7 @@ const usuarioController = require('../controllers/usuarioController')
 router.get('/login', usuarioController.telaLogin)
 // router.post('/login', usuarioController.loginValidado)
 router.get('/cadastro', usuarioController.telaCadastro)
+router.post('/cadastro',usuarioController.realizarCadastro)
 // router.post('/cadastro', usuarioController.cadastroValidado)
 router.get('/minhaconta', usuarioController.telaMinhaConta)
 

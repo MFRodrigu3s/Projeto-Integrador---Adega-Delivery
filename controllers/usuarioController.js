@@ -1,3 +1,5 @@
+const usuariosModel = require("../models/cadastro.json")
+
 const usuarioController = {
     telaLogin: (req, res) => {
         res.render('login')
@@ -7,10 +9,13 @@ const usuarioController = {
     // },
     telaCadastro: (req, res) => {
         res.render("cadastro")
-    }, 
-    // cadastroValidado: async (req, res) => {
-
-    // },
+    },
+    realizarCadastro: (req, res) => {
+        let novoUsuario = req.body
+        console.log(novoUsuario)
+        usuariosModel.push(novoUsuario)
+        res.send(usuariosModel)
+    },
     telaMinhaConta: (req, res) => {
         res.render('minhaConta')
     }
