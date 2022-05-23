@@ -9,11 +9,15 @@ const usuarioController = {
     realizarLogin: async (req, res) => {
         const {email, senha} = req.body
         const acharUsuario = await Usuario.findOne({where: {email: email}})
-        const compararSenha = bcrypt.compareSync(senha, acharUsuario.senha)
-        if(acharUsuario && compararSenha){
-            res.send("logado!")
+        if(acharUsuario){
+            const compararSenha = bcrypt.compareSync(senha, acharUsuario.senha)
+            if(compararSenha){
+                res.send("logado!")
+            } else {
+                res.send("Senha Incorreta!")
+            }
         } else {
-            res.send("Usuario não encontrado! Por favor, cheque se inseriu os dados corretos.")
+            res.send("Usuario não encontrado! Por favor, verifique o email inserido")
         }                                                                                                                                                                                                                                           
     },
     telaCadastro: (req, res) => {
