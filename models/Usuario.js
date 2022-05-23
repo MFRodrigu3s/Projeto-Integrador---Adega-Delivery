@@ -15,7 +15,7 @@ const Usuario = (sequelize, DataTypes) => {
            unique: true
        },
        senha: {
-           type: DataTypes.INTEGER,
+           type: DataTypes.STRING,
            allowNull: false,
        }
     }, {

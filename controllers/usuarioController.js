@@ -1,4 +1,6 @@
 const {Usuario} = require("../models/index")
+const bcrypt = require("bcrypt")
+const saltRound = 8
 
 const usuarioController = {
     telaLogin: (req, res) => {
@@ -6,24 +8,25 @@ const usuarioController = {
     },
     realizarLogin: async (req, res) => {
         const {email, senha} = req.body
-        const testarEmail = await Usuario.findOne({where: {email: email}})
-        const testarSenha = await Usuario.findOne({where: {senha: senha}})
-        if(testarEmail && testarSenha){
-            res.send("Logado!")
+        const acharUsuario = await Usuario.findOne({where: {email: email}})
+        const compararSenha = bcrypt.compareSync(senha, acharUsuario.senha)
+        if(acharUsuario && compararSenha){
+            res.send("logado!")
         } else {
-            console.log(testarEmail, testarSenha)
-        }
+            res.send("Usuario não encontrado! Por favor, cheque se inseriu os dados corretos.")
+        }                                                                                                                                                                                                                                           
     },
     telaCadastro: (req, res) => {
         res.render("cadastro")
     },
     realizarCadastro: async (req, res) => {
         let {nome_completo, email, cpf, senha} = req.body
+        const hash = bcrypt.hashSync(senha, saltRound)
         const criarUsuario = await Usuario.create({
             nome_completo: nome_completo,
             cpf: cpf,
             email: email,
-            senha: senha
+            senha: hash
         })
         console.log(criarUsuario)
         res.send('Cadastrado!')
