@@ -1,9 +1,13 @@
 const Usuario = (sequelize, DataTypes) => {
     const usuario = sequelize.define('Usuario', {
-       nome_completo: {
+       nome: {
            type: DataTypes.STRING,
            allowNull: false,
        },
+       sobrenome: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
        cpf: {
            type: DataTypes.INTEGER,
            allowNull: false,

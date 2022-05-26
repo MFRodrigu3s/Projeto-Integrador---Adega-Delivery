@@ -24,10 +24,11 @@ const usuarioController = {
         res.render("cadastro")
     },
     realizarCadastro: async (req, res) => {
-        let {nome_completo, email, cpf, senha} = req.body
+        let {nome, sobrenome, email, cpf, senha} = req.body
         const hash = bcrypt.hashSync(senha, saltRound)
         const criarUsuario = await Usuario.create({
-            nome_completo: nome_completo,
+            nome: nome,
+            sobrenome: sobrenome,
             cpf: cpf,
             email: email,
             senha: hash
