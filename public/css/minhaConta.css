@@ -1,0 +1,82 @@
+html{
+    /* background-image: url("../images/fundo-preto.jpg");
+    background-size: 1000px */
+    background-color: rgb(41, 38, 38);
+}
+#container {
+    position: fixed;
+    max-width: 1920px;
+    width: 100%;
+    height: 88vh;
+    margin-top: 12vh;
+}
+
+#organizador {
+    margin-top: 2vh;
+    display: flex;
+    height: 95%;
+    width: 85%;
+    background-color: rgb(112, 4, 0);
+    border-radius: 8px;
+}
+
+#container-foto{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 35%;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+#foto-perfil{
+    width: 300px;
+    border-radius: 8px;
+    margin-top: 12vh;
+}
+
+#area-edicao{
+    width: 65%;
+    border: 2px solid #fff;
+}
+
+#container-foto p {
+    margin-top: 15vh;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#form-edicao {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-edicao label {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+#form-edicao input {
+    height: 5vh;
+    width: 15vw;
+}
+
+#form-edicao button {
+    width: 10vw;
+    height: 7vh;
+    border-radius: 8px;
+}
+
+#organizador-form {
+    display: flex;
+}
+
+.form-style{
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+}
