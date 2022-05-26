@@ -1,64 +1,65 @@
-header {
-    position: relative;
+#container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+header{
     top: 0;
-    height:auto;
+    height: auto;
+    width: 100%;
 }
 
 nav {
-    background-color: rgb(160, 1, 1);
+    background-color: brown;
     position: fixed;
     top: 0;
-    height: 100px;
+    height: 12vh;
     width: 100%;
-    z-index: 1;
-    border: 1px solid black;
-    opacity: 0.9;
-}
-
-nav:after {
-    clear: both;
-    content: "";
-    display: block;
+    border-bottom: 2px solid black;
 }
 
 #nav-container {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    margin-right: 0;
 }
 
-#nav-container h1 {
+#logo-e-marca {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 10px;
     width: fit-content;
-    height: fit-content;
+    height: 10vh;
+}
+
+#marca {
+    font-size: 1.5rem;
+    margin-left: 15px;
+    color: #fff;
 }
 
 #logo {
-    width: 80px;
-    height: 80px;
-    margin-top: 10px;
-    margin-left: 25px;
+    width: 60px;
 }
 
-#lista-Nav {
-    float: right;
-    height: 100px;
-    line-height: 100px;
-    margin: 0;
-    margin-right: 15px;
+#lista-nav {
+    margin-right: 2vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
 }
 
-#lista-Nav li {
+#lista-nav li {
     list-style: none;
-    float: left;
-    margin: 5px 15px;
+    margin-left: 3vw;
 }
 
-#lista-Nav a {
+#lista-nav li a {
     text-decoration: none;
-    color:white;
+    color: #fff;
+    width: 100%;
 }
 
-#lista-Nav a:hover {
-    color: black;
+#lista-nav li a:hover{
+    color: darkgray;
 }
-
