@@ -1,7 +1,7 @@
 html{
-    /* background-image: url("../images/fundo-preto.jpg");
-    background-size: 1000px */
-    background-color: rgb(41, 38, 38);
+    background-image: url("../images/fundo-de-bar.jpg");
+    background-size: cover;
+
 }
 #container {
     position: fixed;
@@ -16,7 +16,8 @@ html{
     display: flex;
     height: 95%;
     width: 85%;
-    background-color: rgb(112, 4, 0);
+    background-color: antiquewhite;
+    border: 4px solid rgb(160, 1, 1);
     border-radius: 8px;
 }
 
@@ -26,26 +27,30 @@ html{
     padding-left: 10px;
     padding-right: 10px;
     width: 35%;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-right: 4px solid rgb(160, 1, 1);
 }
 
 #foto-perfil{
     width: 300px;
+    border: 4px solid rgb(160, 1, 1);
     border-radius: 8px;
     margin-top: 12vh;
 }
 
 #area-edicao{
+    text-align: center;
     width: 65%;
-    border: 2px solid #fff;
+}
+
+#area-edicao h1 {
+    margin-top: 5vh;
+    color: rgb(160, 1, 1);
 }
 
 #container-foto p {
     margin-top: 15vh;
     font-size: 1.5rem;
-    color: #fff;
+    color: black;
 }
 
 #form-edicao {
@@ -54,10 +59,10 @@ html{
 }
 
 #form-edicao label {
-    color: #fff;
+    color: black;
     font-size: 1.5rem;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
+    margin-top: 6vh;
+    margin-bottom: 0.5vh;
 }
 
 #form-edicao input {
@@ -66,9 +71,10 @@ html{
 }
 
 #form-edicao button {
-    width: 10vw;
     height: 7vh;
-    border-radius: 8px;
+    width: 10vw;
+    background-color: rgb(160, 1, 1);
+    color: antiquewhite;
 }
 
 #organizador-form {
@@ -79,4 +85,6 @@ html{
     display: flex;
     flex-direction: column;
     margin: 5vw;
+    margin-bottom: 8vh;
+    margin-top: 5vh;
 }

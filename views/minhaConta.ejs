@@ -6,36 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Conta</title>
-    <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/cabecalho.css">
-    <link rel="stylesheet" href="./public/css/minhaConta.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cabecalho.css">
+    <link rel="stylesheet" href="/css/minhaConta.css">
 </head>
 
 <body>
     <section id="container">
-        <header>
-            <nav>
-                <div id="nav-container">
-                    <div id="logo-e-marca">
-                        <img id="logo" src="./public/images/balcao-de-bar.png" alt="">
-                        <h1 id="marca">Adega Delivery</h1>
-                    </div>
-                    <ul id="lista-nav">
-                        <li><a href=".">PÁGINA INICIAL</a></li>
-                        <li><a href=".">PRODUTOS</a></li>
-                        <li><a href=".">CARRINHO</a></li>
-                        <li><a href=".">MINHA CONTA</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+
+       <%- include('./partials/cabecalho.ejs') %>
+
         <div id="organizador">
             <div id="container-foto">
-                <img id="foto-perfil" src="./public/images/fundo-de-bar.jpg" alt="">
+                <img id="foto-perfil" src="/images/fundo-de-bar.jpg" alt="">
                 <p><b>Bem vindo, -usuario-</b></p>
             </div>
             <div id="area-edicao">
-                <form  id="form-edicao">
+                <h1>Suas Informações:</h1>
+                <form  action="/usuario/minhaconta" id="form-edicao" method="post">
                     <div id="organizador-form">
                         <div class="form-style">
                             <label for="nome_completo" id="label-nome"> Nome:</label>
@@ -67,17 +55,3 @@
 </body>
 
 </html>
-<!-- <nav>
-    <div id="nav-container">
-
-        <img id="logo" src="./public/images/balcao-de-bar.png" alt="">
-
-        <ul id="lista-Nav">
-            <li><a href=".">PÁGINA INICIAL</a></li>
-            <li><a href=".">PRODUTOS</a></li>
-            <li><a href=".">CARRINHO</a></li>
-            <li><a href=".">MINHA CONTA</a></li>
-        </ul>
-            
-    </div>
-</nav> -->
