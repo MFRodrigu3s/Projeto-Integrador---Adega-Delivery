@@ -27,10 +27,14 @@ nav {
     height: 10vh;
 }
 
-#marca {
+#marca a {
     font-size: 1.5rem;
     margin-left: 15px;
     color: #fff;
+}
+
+#marca a:hover{
+    color: darkgrey;
 }
 
 #logo {
