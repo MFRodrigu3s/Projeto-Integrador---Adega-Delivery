@@ -1,9 +1,3 @@
-body {
-    background-image: url('../images/fundo-de-bar.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 label {
     margin-top: 2vh;
     font-size: 1.5rem;
