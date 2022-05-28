@@ -11,6 +11,10 @@ const Produtos = (sequelize, DataTypes) => {
         preco: {
             type: DataTypes.DECIMAL(4,2),
             allowNull: false
+        },
+        tipo_de_bebida: {
+            type: DataTypes.STRING(50),
+            allowNull: false
         }
     }, {
         tableName:"produtos",
