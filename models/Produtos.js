@@ -9,7 +9,7 @@ const Produtos = (sequelize, DataTypes) => {
             allowNull: false
         },
         preco: {
-            type: DataTypes.DECIMAL(4,2),
+            type: DataTypes.DECIMAL(5,2),
             allowNull: false
         },
         tipo_de_bebida: {
