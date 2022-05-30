@@ -1,0 +1,59 @@
+#titulo{
+    text-align: center;
+    margin-top: 17vh;
+}
+
+#titulo h1{
+    font-size: 2.2em;
+    color: #fff;
+}
+
+#area-produtos{
+    background-color: antiquewhite;
+    height: fit-content;
+    padding: 2%;
+    height: fit-content;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 2%;
+}
+
+.produto-und{
+    background-color: #fff;
+    display:flex;
+    align-items: center;
+    border: 4px solid rgb(160, 1, 1);
+    border-radius: 10px;
+}
+
+.foto{
+    width: 150px;
+    margin: 2vh;
+    border: 1px solid black;
+}
+
+.informacoes{
+    display: flex;
+    margin-left: 3vw;
+    width: 100%;
+    margin-right: 3vw;
+}
+
+.informacao{
+    font-size: 1.7rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#botao{
+    display: flex;
+    margin-top: 5vh;
+}
+
+#botao button{
+    background-color: rgb(160, 1, 1);
+    color: #fff;
+    height: 8vh;
+    width: 13vw;
+    font-size: 1.2rem;
+}
