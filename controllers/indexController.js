@@ -8,7 +8,10 @@ const indexController = {
         const pesquisa = await Produtos.findAll()
         res.render("catalogo", {pesquisa})
     },
-    
+    catalogoTeste: async (req, res) => {
+        const pesquisa = await Produtos.findAll()
+        res.render("catalogoTeste", {pesquisa})
+    }
 }
 
 module.exports = indexController
