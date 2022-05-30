@@ -7,3 +7,7 @@
 html {
   background-image: url("../images/styles/fundo2.jpg");
 }
+
+button {
+  cursor: pointer;
+}
