@@ -15,6 +15,10 @@ const Produtos = (sequelize, DataTypes) => {
         tipo_de_bebida: {
             type: DataTypes.STRING(50),
             allowNull: false
+        },
+        path: {
+            type: DataTypes.STRING(50),
+            allowNull: false
         }
     }, {
         tableName:"produtos",
