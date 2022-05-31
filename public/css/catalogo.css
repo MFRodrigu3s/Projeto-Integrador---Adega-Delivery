@@ -85,11 +85,37 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .catalago-produtos{
-    background-color: hotpink;
-    margin-top: 5vh;
+    /* background-color: hotpink; */
     display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
 }
 
 .produto-und {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    margin-top: 2%;
+    text-align: center;
+    padding: 1%;
+    width: 30%;
+}
+
+.produto-und h2 {
+    margin-top: 10px;
+}
+
+.foto-produto {
+    width: 200px;
+}
+
+.informacao{
+    color: black;
+}
+
+.botao-add{
+    width: 6vw;
+    height: 4vh;
+    margin-top: 2vh;
+    color: #fff;
+    background-color: rgb(160, 1, 1);
+    border: none;
 }

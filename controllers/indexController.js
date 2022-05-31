@@ -6,11 +6,11 @@ const indexController = {
     },
     catalogo: async (req, res) => {
         const pesquisa = await Produtos.findAll()
-        res.render("catalogo", {pesquisa})
+        res.render("catalogo", {catalogo: pesquisa})
     },
     catalogoTeste: async (req, res) => {
         const pesquisa = await Produtos.findAll()
-        res.render("catalogoTeste", {catalogo: pesquisa})
+        res.render("catalogoTeste")
     }
 }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
+    <title>Cardápio</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/cabecalho.css">
     <link rel="stylesheet" href="/css/catalogo.css">
@@ -18,58 +18,57 @@
             <h1>CATÁLOGO</h1>
         </div>
         <div id="selecao-produtos">
-            <h1><a href="">VINHOS</a></h1>
-            <h1><a href="">VODKAS</a></h1>
-            <h1><a href="">WHISKYS</a></h1>
+            <h1><a href="#titulo-vinho">VINHOS</a></h1>
+            <h1><a href="#titulo-vodka">VODKAS</a></h1>
+            <h1><a href="#titulo-whisky">WHISKYS</a></h1>
         </div>
         <div id="area-produtos">
             <div class="area-catalogo">
                 <h1 id="titulo-vinho">Vinhos</h1>
                 <div class="catalago-produtos">
-                    <div class="produto-und">
-                        <h2>vinho</h2>
-                    </div>
-                    <div class="produto-und">
-                        <h2>vinho</h2>
-                        <!-- <P>
-                            <%= pesquisa %>
-                        </P> -->
-                    </div>
-                    <div class="produto-und">
-                        <h2>vinho</h2>
-                    </div>
+                    <% for (let produto of catalogo) { %>
+                       <% if(produto.tipo_de_bebida == "vinho") { %>
+                            <div class="produto-und">
+                                <img class="foto-produto" src=<%=produto.path%> alt="">
+                                <h2 class="informacao"><%=produto.nome_produto%></h2>
+                                <h2 class="informacao">R$<%=produto.preco%></h2>
+                                <button class="botao-add">Comprar</button>
+                            </div>
+                        <% } %>
+                    <% } %>
                 </div>
             </div>
             <div class="area-catalogo">
                 <h1 id="titulo-vodka">Vodkas</h1>
                 <div class="catalago-produtos">
-                    <div class="produto-und">
-                        <h2>vodka</h2>
-                    </div>
-                    <div class="produto-und">
-                        <h2>vodka</h2>
-                    </div>
-                    <div class="produto-und">
-                        <h2>vodka</h2>
-                    </div>
+                    <% for (let produto of catalogo) { %>
+                        <% if(produto.tipo_de_bebida == "vodka") { %>
+                             <div class="produto-und">
+                                 <img class="foto-produto" src=<%=produto.path%> alt="">
+                                 <h2 class="informacao"><%=produto.nome_produto%></h2>
+                                 <h2 class="informacao">R$<%=produto.preco%></h2>
+                                <button class="botao-add">Comprar</button>
+                             </div>
+                         <% } %>
+                     <% } %>
                 </div>
             </div>
             <div class="area-catalogo">
                 <h1 id="titulo-whisky">Whiskys</h1>
                 <div class="catalago-produtos">
-                    <div class="produto-und">
-                        <h2>whisky</h2>
-                    </div>
-                    <div class="produto-und">
-                        <h2>whisky</h2>
-                    </div>
-                    <div class="produto-und">
-                        <h2>whisky</h2>
-                    </div>
+                    <% for (let produto of catalogo) { %>
+                        <% if(produto.tipo_de_bebida == "whisky") { %>
+                             <div class="produto-und">
+                                 <img class="foto-produto" src=<%=produto.path%> alt="">
+                                 <h2 class="informacao"><%=produto.nome_produto%></h2>
+                                 <h2 class="informacao">R$<%=produto.preco%></h2>
+                                <button class="botao-add">Comprar</button>
+                             </div>
+                         <% } %>
+                     <% } %>
                 </div>
             </div>
         </div>
-
     </section>
 </body>
 </html>
