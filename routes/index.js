@@ -5,5 +5,6 @@ const indexController = require('../controllers/indexController')
 
 router.get('/', indexController.paginaInicial)
 router.get('/produtos', indexController.catalogo)
+router.get('/carrinho', indexController.carrinho)
 
 module.exports = router;

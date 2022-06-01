@@ -8,9 +8,8 @@ const indexController = {
         const pesquisa = await Produtos.findAll()
         res.render("catalogo", {catalogo: pesquisa})
     },
-    catalogoTeste: async (req, res) => {
-        const pesquisa = await Produtos.findAll()
-        res.render("catalogoTeste")
+    carrinho: (req, res) => {
+        res.render("carrinho")
     }
 }
 
