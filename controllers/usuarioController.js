@@ -13,7 +13,7 @@ const usuarioController = {
             if(acharUsuario){
                 const compararSenha = bcrypt.compareSync(senha, acharUsuario.senha)
                 if(compararSenha){
-                    // req session
+                    req.session.usuario = email
                     res.redirect("/usuario/minhaconta")
                 } else {
                     res.send("Senha Incorreta!")
