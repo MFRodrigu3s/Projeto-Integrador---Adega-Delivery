@@ -30,7 +30,8 @@
                        <% if(produto.tipo_de_bebida == "vinho") { %>
                             <div class="produto-und">
                                 <img class="foto-produto" src=<%=produto.path%> alt="">
-                                <h2 class="informacao"><%=produto.nome_produto%></h2>
+                                <p class="nome"><%=produto.nome_produto%></p>
+                                <p class="litros"><%=produto.mililitros%>mls</p>
                                 <h2 class="informacao">R$<%=produto.preco%></h2>
                                 <button class="botao-add">Comprar</button>
                             </div>
@@ -45,7 +46,8 @@
                         <% if(produto.tipo_de_bebida == "vodka") { %>
                              <div class="produto-und">
                                  <img class="foto-produto" src=<%=produto.path%> alt="">
-                                 <h2 class="informacao"><%=produto.nome_produto%></h2>
+                                 <p class="nome"><%=produto.nome_produto%></p>
+                                <p class="litros"><%=produto.mililitros%>mls</p>
                                  <h2 class="informacao">R$<%=produto.preco%></h2>
                                 <button class="botao-add">Comprar</button>
                              </div>
@@ -60,7 +62,8 @@
                         <% if(produto.tipo_de_bebida == "whisky") { %>
                              <div class="produto-und">
                                  <img class="foto-produto" src=<%=produto.path%> alt="">
-                                 <h2 class="informacao"><%=produto.nome_produto%></h2>
+                                 <p class="nome"><%=produto.nome_produto%></p>
+                                <p class="litros"><%=produto.mililitros%>mls</p>
                                  <h2 class="informacao">R$<%=produto.preco%></h2>
                                 <button class="botao-add">Comprar</button>
                              </div>
