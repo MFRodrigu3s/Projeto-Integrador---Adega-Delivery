@@ -29,8 +29,8 @@ const usuarioController = {
         res.render("cadastro")
     },
     realizarCadastro: async (req, res) => {
-        let {nome, sobrenome, email, cpf, senha} = req.body
-        if(nome, sobrenome, email, cpf, senha){
+        let dadosRecebidos = {nome, sobrenome, email, cpf, senha} = req.body
+        if(dadosRecebidos){
             const hash = bcrypt.hashSync(senha, saltRound)
             const criarUsuario = await Usuario.create({
                 nome: nome,
@@ -45,12 +45,13 @@ const usuarioController = {
                 res.send("deu errado!")
             }
         } else {
-            res.send("Por favor, insira os dados corretamente.")
+            res.send("algo deu errado!")
         }
     },
-    telaMinhaConta: (req, res) => {
-        // const pesquisa = Usuario.findOne({where: {email:email}})
-        res.render('minhaConta')
+    telaMinhaConta: async (req, res) => {
+        let email = req.session.usuario
+        let usuario = await Usuario.findOne({where: {email:email}})
+        res.render('minhaConta', {usuario})
     },
     updateMinhaConta: async (req, res) => {
         // const atualizacao = Usuario.update({
