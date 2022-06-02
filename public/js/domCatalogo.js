@@ -1,6 +1,7 @@
 function AddCarrinho(nome, valor, quantidade){
-    localStorage.setItem(nome, quantidade+'un')
+    localStorage.setItem("nome", nome)
+    localStorage.setItem("qntd", quantidade)
     const valorTdP = valor * quantidade
-    localStorage.setItem(valor, valorTdP)
+    localStorage.setItem('valorTdP', valorTdP)
     alert('Produto adicionado ao carrinho!')
 }
