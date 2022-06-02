@@ -1,6 +1,13 @@
 function getCarrinho() {
-    let nome = localStorage.getItem("nome")
-    let quanditade = localStorage.getItem("qntd")
-    let valorTdP = localStorage.getItem("valorTdP")
-    console.log(nome, quanditade, valorTdP)
+
+    for(let i = 1; i<=99; i++){
+
+        let nome = localStorage.getItem("produto" + i)
+        let quanditade = localStorage.getItem("qntdProd" + i)
+        let valorTdP = localStorage.getItem("valorTdP" + i)
+
+            console.log(nome, quanditade, valorTdP)
+
+    }
+    
 }
