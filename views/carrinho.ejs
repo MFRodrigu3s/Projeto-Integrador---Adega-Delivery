@@ -12,21 +12,7 @@
 <body>
     <section id="container">
 
-        <header>
-            <nav>
-                <div id="nav-container">
-                    <div id="logo-e-marca">
-                        <img id="logo" src="/images/styles/balcao-de-bar.png" alt="">
-                        <h1 id="marca"><a href="/">Adega Delivery</a></h1>
-                    </div>
-                    <ul id="lista-nav">
-                        <li><a href="/produtos">PRODUTOS</a></li>
-                        <li><a href=".">CARRINHO</a></li>
-                        <li><a href="/usuario/minhaconta">MINHA CONTA</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <%- include("./partials/cabecalho") %>
 
         <div id="titulo">
             <h1>CARRINHO</h1>
@@ -34,11 +20,11 @@
 
         <div id="area-produtos">
             <div class="produto-und">
-                <img class="foto" src="/images/bebidas/bebida1.jpg">
+                <!-- <img class="foto" src="/images/bebidas/bebida1.jpg"> -->
                 <div class="informacoes">
-                    <p class="informacao"><b>nome do produto</b></p>
-                    <p class="informacao">X <b>qtd</b></p>
-                    <p class="informacao"><b>R$ </b>xx,xx</p>
+                    <p id="nome">nome do produto</p>
+                    <p id="quantidade">X qtd</p>
+                    <p id="valorTdP">R$ xx,xx</p>
                 </div>
             </div>
             <div id="botao">
@@ -47,5 +33,6 @@
         </div>
 
     </section>
+    <script src="/js/domCarrinho.js"></script>
 </body>
 </html>
