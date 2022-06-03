@@ -43,7 +43,7 @@
     text-align: center;
 }
 
-#botao{
+.botao{
     display: flex;
     margin-bottom: 5vh;
 }
