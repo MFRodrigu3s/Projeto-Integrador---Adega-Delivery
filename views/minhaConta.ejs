@@ -18,7 +18,11 @@
 
         <div id="organizador">
             <div id="container-foto">
-                <img id="foto-perfil" src="/images/styles/fundo-de-bar.jpg" alt="">
+                <!-- <img id="foto-perfil" src="/images/styles/fundo-de-bar.jpg" alt=""> -->
+                <form action="/usuario/minhaconta" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="foto-perfil" id="foto-Perfil">
+                    <button type="submit">Enviar</button>
+                </form>
                 <p><b>Bem vindo, <%=usuario.nome%></b></p>
             </div>
             <div id="area-edicao">
