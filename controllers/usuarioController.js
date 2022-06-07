@@ -53,10 +53,27 @@ const usuarioController = {
         let usuario = await Usuario.findOne({where: {email:email}})
         res.render('minhaConta', {usuario})
     },
-    updateMinhaConta: async (req, res) => {
-        // const atualizacao = Usuario.update({
-
-        // })
+    updateMC: async (req, res) => {
+       let dados = {nome, sobrenome, email, cpf, senha} = req.body
+       if(dados){
+           const hash = bcrypt.hashSync(senha, saltRound)
+           const atualizarUsuario = await Usuario.update({
+               nome: nome,
+               sobrenome: sobrenome,
+               cpf: cpf,
+               email: email,
+               senha: hash
+           }, {
+               where: {email: email}
+           })
+           if(atualizarUsuario){
+               res.redirect('/usuario/minhaconta')
+           } else {
+               res.send("deu errado!")
+           }
+       } else {
+           res.send("insira os dados!")
+       }
     }
 }
 

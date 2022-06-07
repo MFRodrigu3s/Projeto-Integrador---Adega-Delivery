@@ -24,6 +24,6 @@ router.get('/cadastro', usuarioController.telaCadastro)
 router.post('/cadastro', cadastroMiddleware, usuarioController.realizarCadastro)
 
 router.get('/minhaconta', logadoMiddleware, usuarioController.telaMinhaConta)
-router.post('/minhaconta', logadoMiddleware, upload.single('foto-perfil'),usuarioController.telaMinhaConta)
+router.post('/minhaconta', logadoMiddleware, upload.single('foto-perfil'),usuarioController.updateMC)
 
 module.exports = router;
