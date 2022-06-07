@@ -1,9 +1,15 @@
 function getCarrinho() {
 
-    let nome = localStorage.getItem("produto")
-    console.log(nome)
-    let div = document.getElementById("area-produtos")
     let divTeste = document.getElementById("teste")
+    let div = document.getElementById("area-produtos")
+
+    if(localStorage.length !== 0){
+        divTeste.remove()
+    }
+    console.log(localStorage.length)
+
+    let nome = localStorage.getItem("produto")
+    
 
     for (let i = 1; i <= 99; i++) {
 
@@ -16,9 +22,9 @@ function getCarrinho() {
 
         if (nome) {
             div.innerHTML += 
-            `<div class="produto-und">
+            `<div id="${i}" class="produto-und">
             <img class="foto" src=${foto} alt="${nome}"></img>
-            <p class="informacao" id="${i}">${nome}</p>
+            <p class="informacao">${nome}</p>
             <p class="informacao">${quantidade}und</p>
             <p class="informacao">R$ ${valorTdP}</p>
             <a href="#" class="btn-excluir" onclick="deletarItem(${i})">X</a>
@@ -30,10 +36,16 @@ function getCarrinho() {
 }
 
 function deletarItem(id) {
+
+    let produtoUnd = document.getElementById(id)
+
     localStorage.removeItem("produto"+id)
     localStorage.removeItem("qntdProd" + id)
     localStorage.removeItem("valorTdP" + id)
     localStorage.removeItem("foto" + id)
+
+    produtoUnd.remove()
+
 }
 
 function limparCarrinho(){
@@ -45,3 +57,6 @@ function limparCarrinho(){
 }
 
 getCarrinho()
+
+// toastfy
+// https://apvarun.github.io/toastify-js/
