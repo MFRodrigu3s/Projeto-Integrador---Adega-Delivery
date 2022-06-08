@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/pagamento.css">
+</head>
+<body>
+    <section id="container">
+        <h1 id="marca"><a href="/">Adega Delivery LTDA.</a></h1>
+        <div id="div-pagamentos">
+            <h1 id='titulo'>Escolha a Forma de Pagamento:</h1>
+            <div id="div-botoes">
+                <button class="botao-escolha" onclick="pgNaEntrega()">Pagar na Entrega</button>
+                <button id="botao-pix" class="botao-escolha" onclick="pix()">Pagar com Pix</button>
+            </div>
+        </div>
+    </section>
+    <script src="../public/js/domPagamento.js"></script>
+</body>
+</html>
