@@ -1,0 +1,109 @@
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#marca {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 3vh;
+}
+
+#marca a {
+    color: #fff;
+}
+
+#marca a:hover {
+    color: darkgrey;
+}
+
+#div-aguardoConfirm h1 {
+    color: #fff;
+    margin-top: 20vh;
+    font-size: 2rem;
+}
+
+#progress-bar {
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    color: #fff;
+    align-items: center;
+}
+
+#etapaConc {
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(24, 122, 0);
+}
+
+#etapaEmAnd {
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(91, 192, 66);
+}
+
+.etapaRest {
+    z-index: 1;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    color: black;
+    margin-left: 0;
+}
+
+#barraConc {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(24, 122, 0);
+}
+
+.barraNC {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#div-texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13vh;
+    background-color: rgb(160, 1, 1);
+    padding: 10px;
+    border: 2px antiquewhite solid;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.textoInfo {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#div-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12vh;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#style {
+    display: flex;
+    margin-top: 2vh;
+}
+
+#whatsapp {
+    width: 30px;
+    margin-right: 1vw;
+}
