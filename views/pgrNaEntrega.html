@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/pgrNaEntrega.css">
+</head>
+<body>
+    <section id="container">
+
+        <h1 id="marca"><a href="/">Adega Delivery LTDA.</a></h1>
+    
+            <div id="div-aguardoConfirm">
+                <h1>Pedido sendo preparado para entrega!</h1>
+    
+                    <div id="progress-bar">
+                        
+                        <div id="etapaConc"><b>1</b></div>
+                        <div id="barraConc"></div>
+        
+                        <div id="etapaEmAnd"><b>2</b></div>
+                        <div class="barraNC"></div>
+        
+                        <div class="etapaRest" id="etapa3"><b>3</b></div>
+                        <div class="barraNC"></div>
+        
+                        <div class="etapaRest" id="etapa4"><b>4</b></div>
+        
+                    </div>
+    
+                    <div id="div-form">
+                        <p>Informe o endereço para entrega:</p>
+                        <form action="#">
+                            <input type="text" name="endreco">
+                            <button type="submit">Confirmar</button>
+                        </form>
+                    </div>
+                    
+                        <div id="div-contato">
+                            <p>Quaisquer dúvidas, entre em contato:</p>
+                            <div id="style">
+                                <img src="../public/images/estilos/whatsapp-logo.png" alt="logo whats" id="whatsapp"> 
+                                <p>(54) 991557985</p>
+                            </div>
+                        </div>
+            </div>
+    </section>
+    <script src="../public/js/domPagamento.js"></script>
+</body>
+</html>
