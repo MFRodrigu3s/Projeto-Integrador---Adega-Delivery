@@ -10,6 +10,15 @@ const indexController = {
     },
     carrinho: (req, res) => {
         res.render("carrinho")
+    },
+    pagamento: (req, res) => {
+        res.render("pagamento")
+    },
+    aprovandoPag: (req, res) => {
+        res.render("aguardando")
+    },
+    separandoPedido: (req, res) => {
+        res.render("pgrNaEntrega")
     }
 }
 
