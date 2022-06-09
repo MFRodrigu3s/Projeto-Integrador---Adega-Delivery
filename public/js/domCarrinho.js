@@ -1,7 +1,8 @@
+let div = document.getElementById("area-produtos")
+
 function getCarrinho() {
 
     let divCarrinhoVazio = document.getElementById("carrinho-vazio")
-    let div = document.getElementById("area-produtos")
 
     if(localStorage.length !== 0){
         divCarrinhoVazio.remove()
@@ -33,21 +34,33 @@ function deletarItem(id) {
 
     let produtoUnd = document.getElementById(id)
 
-    localStorage.removeItem("produto"+id)
-    localStorage.removeItem("qntdProd" + id)
-    localStorage.removeItem("valorTdP" + id)
-    localStorage.removeItem("foto" + id)
+    if(localStorage.length > 4) {
+        
+        localStorage.removeItem("produto"+id)
+        localStorage.removeItem("qntdProd" + id)
+        localStorage.removeItem("valorTdP" + id)
+        localStorage.removeItem("foto" + id)
 
-    produtoUnd.remove()
+        produtoUnd.remove()
 
+    } else if (localStorage.length <= 4) {
+
+        localStorage.removeItem("produto"+id)
+        localStorage.removeItem("qntdProd" + id)
+        localStorage.removeItem("valorTdP" + id)
+        localStorage.removeItem("foto" + id)
+
+        produtoUnd.remove()
+
+        div.innerHTML += `<div id="carrinho-vazio" class="produto-und"><p>Seu Carrinho está vazio!</p></div>`
+
+    }
+    
 }
 
 function limparCarrinho(){
-
-    let div = document.getElementById("area-produtos")
     localStorage.clear()
-    div.innerHTML = `<div class="produto-und"><h1>Seu Carrinho está vazio!</h1></div>`
-
+    div.innerHTML = `<div id="carrinho-vazio" class="produto-und"><p>Seu Carrinho está vazio!</p></div>`
 }
 
 getCarrinho()
