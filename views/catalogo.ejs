@@ -53,7 +53,11 @@
                                  <p class="nome"><%=produto.nome_produto%></p>
                                 <p class="litros"><%=produto.mililitros%>mls</p>
                                  <h2 class="informacao">R$<%=produto.preco%></h2>
-                                <button class="botao-add">Comprar</button>
+                                 <div>
+                                    <input type="number" value="1" min="1" max="10" id='<%=produto.id%>'>
+                                    <button class="botao-add" onclick="AddCarrinho('<%=produto.path%>','<%=produto.id%>','<%=produto.nome_produto%>', '<%=produto.preco%>', 
+                                    document.getElementById('<%=produto.id%>').value)">Comprar</button>
+                                </div>
                              </div>
                          <% } %>
                      <% } %>
@@ -69,7 +73,11 @@
                                  <p class="nome"><%=produto.nome_produto%></p>
                                 <p class="litros"><%=produto.mililitros%>mls</p>
                                  <h2 class="informacao">R$<%=produto.preco%></h2>
-                                <button class="botao-add">Comprar</button>
+                                 <div>
+                                    <input type="number" value="1" min="1" max="10" id='<%=produto.id%>'>
+                                    <button class="botao-add" onclick="AddCarrinho('<%=produto.path%>','<%=produto.id%>','<%=produto.nome_produto%>', '<%=produto.preco%>', 
+                                    document.getElementById('<%=produto.id%>').value)">Comprar</button>
+                                </div>
                              </div>
                          <% } %>
                      <% } %>
