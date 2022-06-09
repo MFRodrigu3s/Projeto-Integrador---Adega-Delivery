@@ -1,24 +1,18 @@
 function getCarrinho() {
 
-    let divTeste = document.getElementById("teste")
+    let divCarrinhoVazio = document.getElementById("carrinho-vazio")
     let div = document.getElementById("area-produtos")
 
     if(localStorage.length !== 0){
-        divTeste.remove()
+        divCarrinhoVazio.remove()
     }
-    console.log(localStorage.length)
-
-    let nome = localStorage.getItem("produto")
     
-
     for (let i = 1; i <= 99; i++) {
 
         let nome = localStorage.getItem("produto" + i)
         let quantidade = localStorage.getItem("qntdProd" + i)
         let valorTdP = localStorage.getItem("valorTdP" + i)
         let foto = localStorage.getItem("foto" + i)
-
-        console.log(nome, quantidade, valorTdP)
 
         if (nome) {
             div.innerHTML += 
@@ -27,7 +21,7 @@ function getCarrinho() {
             <p class="informacao">${nome}</p>
             <p class="informacao">${quantidade}und</p>
             <p class="informacao">R$ ${valorTdP}</p>
-            <a href="#" class="btn-excluir" onclick="deletarItem(${i})">X</a>
+            <p class="btn-excluir" onclick="deletarItem(${i})"><b>X</b></p>
             </div>`
         }
         
