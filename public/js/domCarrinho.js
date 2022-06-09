@@ -59,8 +59,12 @@ function deletarItem(id) {
 }
 
 function limparCarrinho(){
-    localStorage.clear()
-    div.innerHTML = `<div id="carrinho-vazio" class="produto-und"><p>Seu Carrinho está vazio!</p></div>`
+    if(localStorage.length > 0){
+        localStorage.clear()
+        div.innerHTML = `<div id="carrinho-vazio" class="produto-und"><p>Seu Carrinho está vazio!</p></div>`
+    } else {
+        alert("o carrinho já está vazio!")
+    }
 }
 
 getCarrinho()
