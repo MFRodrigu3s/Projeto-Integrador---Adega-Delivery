@@ -8,7 +8,11 @@ function pix() {
         sectionContainer.innerHTML += `<div id="div-qrcode">
             <h2>PIX - QR Code</h2>
             <img src="/images/estilos/qrCode.jpg" id="qrcode-img" alt="">
-            <a href="/aprovandoPag"><button id="botao-comprar">Pagamento Realizado</button></a>
+            <a href="/aprovandoPag"><button id="botao-comprar" onclick="apagar()">Pagamento Realizado</button></a>
         </div>`
     }
+}
+
+function apagar() {
+    localStorage.clear()
 }
