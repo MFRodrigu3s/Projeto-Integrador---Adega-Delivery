@@ -14,7 +14,7 @@
         <h1 id="marca"><a href="/">Adega Delivery LTDA.</a></h1>
     
             <div id="div-aguardoConfirm">
-                <h1>Pedido sendo preparado para envio!</h1>
+                <h1 id="titulo">Pedido sendo preparado para envio!</h1>
     
                     <div id="progress-bar">
                         
@@ -31,12 +31,19 @@
         
                     </div>
     
-                    <div id="div-form">
-                        <p>Informe o endereço para entrega:</p>
-                        <form action="#">
-                            <input type="text" name="endreco">
-                            <button type="submit">Confirmar</button>
-                        </form>
+                    <div id="area-dinamica">
+                        <div id="area-form">
+                            <h1>Indique o endereço para entrega:</h1>
+                            <form action="/aprovandoPag" method="post" id="form-endereco">
+                                <label for="rua">Rua:</label>
+                                <input type="text" name="rua" id="input-rua" required>
+                                <label for="numero">Numero:</label>
+                                <input type="text" name="numero" id="input-numero" required>
+                                <label for="complemento">Complemento:</label>
+                                <input type="text" name="complemento" id="input-complemento">
+                            </form>
+                            <button id="botao-enviar" onclick="texto2()">Enviar</button>
+                        </div>
                     </div>
                     
                         <div id="div-contato">
@@ -48,6 +55,6 @@
                         </div>
             </div>
     </section>
-    <script src="/js/domPagamento.js"></script>
+    <script src="/js/domFormEndereco.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
     color: darkgrey;
 }
 
-#div-aguardoConfirm h1 {
+#titulo {
     color: #fff;
     margin-top: 15vh;
     font-size: 2rem;
@@ -72,45 +72,6 @@
     border-bottom: 2px solid black;
 }
 
-#div-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 12vh;
-    background-color: rgb(160, 1, 1);
-    padding: 10px;
-    border: 2px antiquewhite solid;
-    border-radius: 10px;
-    width: fit-content;
-}
-
-#div-form p {
-    color: #fff;
-    font-size: 1.3rem;
-} 
-
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-input {
-    margin-top: 2vh;
-    height: 4vh;
-    width: 85%;
-}
-
-button {
-    margin-top: 2vh;
-    height: 4vh;
-    width: 50%;
-}
-
-button:hover {
-    background-color: darkgray;
-}
-
 #div-contato {
     display: flex;
     flex-direction: column;
@@ -119,6 +80,7 @@ button:hover {
     margin-top: 12vh;
     color: #fff;
     font-size: 1.2rem;
+    margin-bottom: 5vh;
 }
 
 #style {
@@ -129,4 +91,72 @@ button:hover {
 #whatsapp {
     width: 30px;
     margin-right: 1vw;
+}
+
+#area-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(160, 1, 1);
+    padding: 10px;
+    border: 2px antiquewhite solid;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+#form-endereco {
+    color: antiquewhite;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-endereco label {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+#form-endereco input {
+    margin-bottom: 3vh;
+    height: 3vh;
+}
+
+button {
+    height: 5vh;
+    width: 8vw;
+    margin: 20px;
+    font-size: 1.1rem;
+    color: black;
+    background-color: antiquewhite;
+}
+
+button:hover{
+    background-color: rgb(187, 187, 187);
+}
+
+/*  */
+
+#div-texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 13vh;
+    background-color: rgb(160, 1, 1);
+    padding: 10px;
+    border: 3px antiquewhite solid;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.textoInfo {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 2vh;
+}
+
+#titulo2 {
+    margin-bottom: 1vh;
 }
