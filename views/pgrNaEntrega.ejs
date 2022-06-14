@@ -34,7 +34,7 @@
                     <div id="area-dinamica">
                         <div id="area-form">
                             <h1>Indique o endereço para entrega:</h1>
-                            <form action="/aprovandoPag" method="post" id="form-endereco">
+                            <form action="/separandoPedido" method="post" id="form-endereco">
                                 <label for="rua">Rua:</label>
                                 <input type="text" name="rua" id="input-rua" required>
                                 <label for="numero">Numero:</label>
@@ -42,7 +42,7 @@
                                 <label for="complemento">Complemento:</label>
                                 <input type="text" name="complemento" id="input-complemento">
                             </form>
-                            <button id="botao-enviar" onclick="texto2()">Enviar</button>
+                            <button id="botao-enviar" type="submit" onclick="texto2()">Enviar</button>
                         </div>
                     </div>
                     

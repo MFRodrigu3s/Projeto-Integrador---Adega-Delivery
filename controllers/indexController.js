@@ -14,11 +14,21 @@ const indexController = {
     pagamento: (req, res) => {
         res.render("pagamento")
     },
-    aprovandoPag: (req, res) => {
+    aprovandoPagTela: (req, res) => {
         res.render("aguardando")
     },
-    separandoPedido: (req, res) => {
+    aprovandoPagForm: (req, res) => {
+        let {rua, numero} = req.body 
+        localStorage.setItem("rua", rua)
+        localStorage.setItem("num", numero)
+    },
+    separandoPedidoTela: (req, res) => {
         res.render("pgrNaEntrega")
+    },
+    separandoPedidoForm: (req, res) => {
+        let {rua, numero} = req.body 
+        localStorage.setItem("rua", rua)
+        localStorage.setItem("num", numero)
     }
 }
 

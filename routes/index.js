@@ -9,8 +9,9 @@ router.get('/', indexController.paginaInicial)
 router.get('/produtos', indexController.catalogo)
 router.get('/carrinho', indexController.carrinho)
 router.get('/pagamento', logadoMiddleware, indexController.pagamento)
-router.get('/aprovandoPag', indexController.aprovandoPag)
-router.post('/aprovandoPag', indexController.aprovandoPag)
-router.get('/separandoPedido', indexController.separandoPedido)
+router.get('/aprovandoPag', indexController.aprovandoPagTela)
+router.post('/aprovandoPag', indexController.aprovandoPagForm)
+router.get('/separandoPedido', indexController.separandoPedidoTela)
+router.post('/separandoPedido', indexController.separandoPedidoForm)
 
 module.exports = router;
