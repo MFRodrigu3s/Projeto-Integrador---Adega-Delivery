@@ -7,8 +7,8 @@ function pix() {
     } else {
         sectionContainer.innerHTML += `<div id="div-qrcode">
             <h2>PIX - QR Code</h2>
-            <img src="../public/images/estilos/qrCode.jpg" id="qrcode-img" alt="">
-            <a href="../../views/aguardando.html"><button id="botao-comprar" href='/google.com'>Pagamento Realizado</button></a>
+            <img src="/images/estilos/qrCode.jpg" id="qrcode-img" alt="">
+            <a href="/aprovandoPag"><button id="botao-comprar">Pagamento Realizado</button></a>
         </div>`
     }
 }
