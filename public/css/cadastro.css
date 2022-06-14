@@ -84,6 +84,7 @@ label {
     margin-top: 15px;
     height: 5vh;
     width: 28vw;
+    text-align: center;
 }
 
 #cadastro form button {

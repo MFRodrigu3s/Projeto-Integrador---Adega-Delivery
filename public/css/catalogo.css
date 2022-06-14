@@ -114,7 +114,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .botao-add{
     width: 6vw;
-    height: 4vh;
+    height: 5vh;
     margin-top: 2vh;
     color: #fff;
     background-color: rgb(160, 1, 1);
@@ -131,4 +131,9 @@ p, h1, h2, h3, h4, h5, h6 {
     color:black;
     margin-top: 5px;
     font-size: 1.3rem;
+}
+
+.input-add {
+    height: 5vh;
+    text-align: center;
 }
