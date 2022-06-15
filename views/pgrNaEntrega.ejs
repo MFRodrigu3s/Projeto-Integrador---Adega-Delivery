@@ -42,7 +42,7 @@
                                 <label for="complemento">Complemento:</label>
                                 <input type="text" name="complemento" id="input-complemento">
                             </form>
-                            <button id="botao-enviar" type="submit" onclick="texto2()">Enviar</button>
+                            <button id="botao-enviar" type="submit" onclick="registrar()">Enviar</button>
                         </div>
                     </div>
                     
@@ -55,6 +55,40 @@
                         </div>
             </div>
     </section>
-    <script src="/js/domFormEndereco.js"></script>
+    <script>
+
+        let areaDinamica = document.getElementById("area-dinamica")
+        let inputRua = document.getElementById("input-rua")
+        let inputNumero = document.getElementById("input-numero")
+
+        function registrar() {
+            if (inputRua.value == "" || inputNumero.value == "") {
+                alert("preencha os campos")
+            } else {
+                let rua = inputRua.value
+                let numero = inputNumero.value
+                sessionStorage.setItem("rua", rua)
+                sessionStorage.setItem("numero", numero)
+                areaDinamica.innerHTML = `<div id="div-texto">
+                    <p id="titulo2" class="textoInfo">Endereço registrado!</p>
+                    <p class="textoInfo">Logo mais, seu pedido será enviado ate você.</p>
+                    <p class="textoInfo">Agradecemos a preferência por nossa loja! Tenha um bom dia.</p>
+                </div>`
+            }
+        }
+
+        function textoInformativo() {
+            if (sessionStorage.length > 0) {
+                areaDinamica.innerHTML = `<div id="div-texto">
+                    <p id="titulo2" class="textoInfo">Endereço registrado!</p>
+                    <p class="textoInfo">Logo mais, seu pedido será enviado ate você.</p>
+                    <p class="textoInfo">Agradecemos a preferência por nossa loja! Tenha um bom dia.</p>
+                </div>`
+            }
+        }
+
+        textoInformativo()
+
+    </script>
 </body>
 </html>

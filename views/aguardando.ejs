@@ -47,7 +47,7 @@
                         <label for="complemento">Complemento:</label>
                         <input type="text" name="complemento" id="input-complemento">
                     </form>
-                    <button type="submit" id="botao-enviar" onclick="texto1()">Enviar</button>
+                    <button type="submit" id="botao-enviar" onclick="registrar()">Enviar</button>
                 </div>
             </div>
 
@@ -60,7 +60,41 @@
             </div>
         </div>
     </section>
-    <script src="/js/domFormEndereco.js"></script>
+    <script>
+
+        let areaDinamica = document.getElementById("area-dinamica")
+        let inputRua = document.getElementById("input-rua")
+        let inputNumero = document.getElementById("input-numero")
+
+        function registrar() {
+            if (inputRua.value == "" || inputNumero.value == "") {
+                alert("preencha os campos")
+            } else {
+                let rua = inputRua.value
+                let numero = inputNumero.value
+                sessionStorage.setItem("rua", rua)
+                sessionStorage.setItem("numero", numero)
+                areaDinamica.innerHTML = `<div id="div-texto">
+                    <p id="titulo2" class="textoInfo">Endereço registrado!</p>
+                    <p class="textoInfo">Assim que confirmarmos o pagamento,</p>
+                    <p class="textoInfo">iremos preparar o pedido para enviá-lo.</p>
+                </div>`
+            }
+        }
+
+        function textoInformativo() {
+            if (sessionStorage.length > 0) {
+                areaDinamica.innerHTML = `<div id="div-texto">
+                    <p id="titulo2" class="textoInfo">Endereço registrado!</p>
+                    <p class="textoInfo">Assim que confirmarmos o pagamento,</p>
+                    <p class="textoInfo">iremos preparar o pedido para enviá-lo.</p>
+                </div>`
+            }
+        }
+
+        textoInformativo()
+
+    </script>
 </body>
 
 </html>
