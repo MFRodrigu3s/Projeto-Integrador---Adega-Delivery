@@ -68,6 +68,5 @@ function limparCarrinho(){
 }
 
 getCarrinho()
-
 // toastfy
 // https://apvarun.github.io/toastify-js/
