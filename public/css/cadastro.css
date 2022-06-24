@@ -19,8 +19,8 @@ label {
     align-items: center;
     justify-content: center;
     width: fit-content;
-    height: 80vh;
-    padding-top: 25px;
+    height: fit-content;
+    padding-top: 10px;
     padding-bottom: 30px;
     border: 10px solid rgb(160, 1, 1);
     border-radius: 8px;
@@ -30,7 +30,7 @@ label {
 }
 
 #marca-logo{
-    margin-top: 25px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
@@ -72,29 +72,43 @@ label {
 
 #organizador {
     display: flex;
+    margin-top: 20px;
 }
 
 .form-style {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 #cadastro form input {
     margin-top: 15px;
-    height: 5vh;
+    height: 35px;
     width: 28vw;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 #cadastro form button {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    height: 6vh;
-    width: 20%;
+    margin-top: 30px;
+    height: 40px;
+    width: 120px;
+    font-size: 1.1rem;
     background-color: rgb(160, 1, 1);
-    color: antiquewhite;
+    color: #fff;
     border: 2px solid rgb(160, 1, 1);
+}
+
+#cadastro form button:hover{
+    background-color: rgb(100, 0, 0);
+    color: darkgray;
+}
+
+#cpf-style{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 #cadastro p {
@@ -109,26 +123,20 @@ label {
     color: black;
 }
 
-/* MANIPULAÇÂO DE DOM */
+/*  */
 
-.invalido {
-    border: 2px red solid
-}
-
-.senhaFraca {
-    border: 2px red solid
-}
-
-.senhaMedia {
-    border: 2px rgb(255, 255, 0) solid
-}
-
-.senhaForte {
-    border: 2px green solid
-}
-
-.msgError {
-    display: none;
-    font-size: 1.2rem;
-    color: crimson;
+@media(max-width: 750px){
+    #cadastro {
+        width: 90%;
+        height: fit-content;
+    }
+    #organizador{
+        flex-direction: column;
+    }
+    #cadastro form input {
+        width: 95%;
+    }
+    #cpf-style{
+        margin-top: 0px
+    }
 }

@@ -18,11 +18,15 @@ function getCarrinho() {
         if (nome) {
             div.innerHTML += 
             `<div id="${i}" class="produto-und">
-            <img class="foto" src=${foto} alt="${nome}"></img>
-            <p class="informacao">${nome}</p>
-            <p class="informacao">${quantidade}und</p>
-            <p class="informacao">R$ ${valorTdP}</p>
-            <p class="btn-excluir" onclick="deletarItem(${i})"><b>X</b></p>
+                <div>
+                    <img class="foto" src=${foto} alt="${nome}"></img>
+                </div>
+                <div class="div-infos"> 
+                    <p class="informacao">${nome}</p>
+                    <p class="informacao">${quantidade}und</p>
+                    <p class="informacao">R$ ${valorTdP}</p>
+                </div>
+                <p class="btn-excluir" onclick="deletarItem(${i})"><b>X</b></p> 
             </div>`
         }
         

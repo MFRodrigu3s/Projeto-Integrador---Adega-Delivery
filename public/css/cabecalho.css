@@ -8,7 +8,7 @@ nav {
     background-color: rgb(160, 1, 1);
     position: fixed;
     top: 0;
-    height: 12vh;
+    height: 80px;
     width: 100%;
     border-bottom: 2px solid black;
 }
@@ -21,10 +21,10 @@ nav {
 #logo-e-marca {
     display: flex;
     align-items: center;
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
     width: fit-content;
-    height: 10vh;
+    height: 100%;
 }
 
 #marca a {
@@ -43,7 +43,7 @@ nav {
 
 #lista-nav {
     margin-right: 2vw;
-    height: 12vh;
+    height: 80px;
     display: flex;
     align-items: center;
 }
