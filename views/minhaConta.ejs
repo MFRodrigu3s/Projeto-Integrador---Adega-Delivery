@@ -17,16 +17,9 @@
        <%- include('./partials/cabecalho.ejs') %>
 
         <div id="organizador">
-            <div id="container-foto">
-                <!-- <img id="foto-perfil" src="/images/estilos/fundo-de-bar.jpg" alt=""> -->
-                <form action="/usuario/minhaconta" method="POST" enctype="multipart/form-data">
-                    <input type="file" name="foto-perfil" id="foto-Perfil">
-                    <button type="submit">Enviar</button>
-                </form>
-                <p>Bem vindo, <%=usuario.nome%></p>
-            </div>
             <div id="area-edicao">
-                <h1>Suas Informações:</h1>
+                <h1 id="titulo">Bem vindo, <%=usuario.nome%>!</h1>
+                <p id="subTitulo">Suas Informações:</p>
                 <form  action="/usuario/minhaconta" id="form-edicao" method="post">
                     <div id="organizador-form">
                         <div class="form-style">

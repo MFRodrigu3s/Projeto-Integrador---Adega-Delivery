@@ -15,4 +15,6 @@ function pix() {
 
 function apagar() {
     localStorage.clear()
+    sessionStorage.clear()
 }
+
