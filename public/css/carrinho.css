@@ -24,14 +24,14 @@
     align-items: center;
     border: 5px solid rgb(226, 79, 79);
     border-radius: 10px;
-    margin-top: 5vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 90%;
 }
 
 .foto{
-    max-width: 12%;
+    width: 150px;
     border: 1px solid black;
     margin-left: 1.5vw;
 }
@@ -55,8 +55,8 @@
 .botao button{
     background-color: rgb(160, 1, 1);
     color: #fff;
-    height: 8vh;
-    width: 13vw;
+    height: 50px;
+    width: 190px;
     font-size: 1.2rem;
 }
 
@@ -72,4 +72,40 @@
     margin-left: 7%;
     font-size: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#carrinho-vazio p{
+    font-size: 1.5rem;
+}
+
+.div-infos{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+/*  */
+
+@media(max-width: 950px){
+    .div-infos{
+        display: flex;
+        flex-direction: column;
+    }
+    .informacao{
+        margin-top: 10px;
+    }
+    .btn-excluir {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 650px){
+    .produto-und{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foto{
+        margin-left: 0;
+    }
 }

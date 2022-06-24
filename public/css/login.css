@@ -11,10 +11,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: fit-content;
     height: auto;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    padding: 25px 100px 30px 100px;
     border: 10px solid rgb(160, 1, 1);
     box-shadow: 0 0 20px 10px;
 }
@@ -54,8 +53,9 @@
 
 #login form input {
     margin-top: 15px;
-    height: 5vh;
-    width: 28vw;
+    height: 40px;
+    width: 350px;
+    text-align: center;
 }
 
 #login form input::placeholder {
@@ -71,16 +71,21 @@
 }
 
 #login form button {
-    margin-top: 5vh;
-    margin-bottom: 4vh;
-    height: 5vh;
-    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 130px;
+    background-color: rgb(231, 0, 0);
+}
+
+#login form button:hover{
     background-color: rgb(160, 1, 1);
+    color: darkgray;
 }
 
 #login form button p {
-    color: antiquewhite;
-    font-size: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
 }
 
 #login p {
@@ -94,4 +99,16 @@
 
 #login p a:hover {
     color: black;
+}
+
+/*  */
+
+@media (max-width: 750px){
+    #login {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #login form input {
+        width: 250px;
+    }
 }

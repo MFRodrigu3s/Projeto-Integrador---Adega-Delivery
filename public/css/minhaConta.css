@@ -1,51 +1,36 @@
 #container {
-    position: fixed;
-    max-width: 1920px;
     width: 100%;
-    height: 88vh;
-    margin-top: 12vh;
+    height: 100%;
+    margin-top: 100px;
 }
 
 #organizador {
-    margin-top: 2vh;
+    margin-top: 140px;
     display: flex;
-    height: 95%;
-    width: 85%;
+    height: fit-content;
+    width: 50%;
+    min-width:fit-content;
     background-color: antiquewhite;
     border: 4px solid rgb(160, 1, 1);
     border-radius: 8px;
-}
-
-#container-foto{
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 35%;
-    border-right: 4px solid rgb(160, 1, 1);
-}
-
-#foto-perfil{
-    width: 300px;
-    border: 4px solid rgb(160, 1, 1);
-    border-radius: 8px;
-    margin-top: 12vh;
+    padding-bottom: 25px;
 }
 
 #area-edicao{
     text-align: center;
-    width: 65%;
+    width: 100%;
 }
 
-#area-edicao h1 {
+#titulo {
+    width: 80%;
     margin-top: 5vh;
     color: rgb(160, 1, 1);
+    font-size: 2.0rem;
 }
 
-#container-foto p {
-    margin-top: 15vh;
-    font-size: 1.5rem;
-    color: black;
+#subTitulo {
+    font-size: 1.2rem;
+    margin-top: 7px;
 }
 
 #form-edicao {
@@ -53,50 +38,63 @@
     flex-direction: column;
 }
 
-.form-style label {
+#form-edicao label {
     color: black;
     font-size: 1.5rem;
-    margin-top: 6vh;
-    margin-bottom: 0.5vh;
+    margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 #form-edicao input {
-    height: 5vh;
-    width: 15vw;
+    height: 30px;
+    width: 225px;
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 #form-edicao button {
-    height: 7vh;
-    width: 10vw;
-    background-color: rgb(160, 1, 1);
+    font-size: 1.1rem;
+    height: 43px;
+    width: 125px;
+    background-color: rgb(250, 0, 0);
     color: antiquewhite;
+    margin-top: 30px;
+}
+
+#form-edicao button:hover {
+    background-color: rgb(160, 1, 1);
+    color: darkgray;
 }
 
 #organizador-form {
     display: flex;
+    width: 100%;
 }
 
 .form-style{
     display: flex;
     flex-direction: column;
-    margin: 5vw;
-    margin-bottom: 8vh;
-    margin-top: 5vh;
-}
-
-.input-form {
-    text-align: center;
 }
 
 #senha-style {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 6vh;
 }
 
-#senha-style label {
-    color: black;
-    font-size: 1.5rem;
-    margin-bottom: 0.5vh;
+@media(max-width: 1050px) {
+    #organizador-form {
+        flex-direction: column;
+    }
+    .form-style{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .form-style label {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #senha-style {
+        margin-top: 20px;
+    }
 }

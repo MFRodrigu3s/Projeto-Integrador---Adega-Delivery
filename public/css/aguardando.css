@@ -123,12 +123,13 @@
 
 #form-endereco input {
     margin-bottom: 3vh;
-    height: 3vh;
+    height: 27px;
+    text-align: center;
 }
 
 button {
-    height: 5vh;
-    width: 8vw;
+    height: 35px;
+    width: 100px;
     margin: 20px;
     font-size: 1.1rem;
     color: black;

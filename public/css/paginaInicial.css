@@ -1,54 +1,227 @@
-#banner-boasVindas {
-    background-image: url('../images/fundo-de-bar.jpg');
-    background-size: cover;
-    background-position: 0 55%;
-    position: relative;
-    margin-top: 100px;
-    height: 35vh;
-    padding-top: 10vh;
-    padding-bottom: 40vh;
+#container{
+    margin-top: 12vh;
+    height: fit-content;
 }
 
-#container-texto-boasVindas {
-    position: relative;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+#boas-vindas {
+    margin-top: 17vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo {
+    color: #fff;
     text-align: center;
-    padding-top: 15vh;
-    padding-bottom: 15vh;
-    color: antiquewhite;
+    font-size: 2.5rem;
 }
 
-#container-texto-boasVindas h1 {
-    background-color: rgb(160, 1, 1, 0.9);
-    font-size: 2.8rem;
-    margin-bottom: 15px;
-    border: groove 10px rgb(216, 216, 216);
-    border-radius: 8px;
-    padding: 5px;
+#boas-vindas p {
+    color: #fff;
+    margin-top: 1vh;
+    font-size: 1rem;
 }
 
-#container-texto-boasVindas p {
-    background-color: rgb(160, 1, 1, 0.9);
-    font-size: 1.2rem;
+#promocoes-div {
     width: 80%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    border: groove 5px rgb(216, 216, 216);
-    border-radius: 8px;
+    margin-top: 7vh;
+    border: 5px solid rgb(160,1,1);
+    padding: 10px;
 }
 
-#botoes-criarConta-logar {
-    color: antiquewhite;
-    background-color: rgb(160, 1, 1, 0.9);
-    border: groove 5px rgb(216, 216, 216);
-    border-radius: 8px;
+#promocoes-div h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 2vh;
+}
+
+#promocoes-style {
+    display: flex;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.anuncio-promocao {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 5px solid rgb(221, 101, 101);
+    border-radius: 10px;
+}
+
+.titulo-data {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.titulo-promocao {
+    font-size: 1.3rem;
+    padding-bottom: 3px;
+    border-bottom: 2px solid rgb(160,1,1);
+}
+
+.data-promocao{
+    margin-top: 8px;
+    text-align: center;
+}
+
+.foto-promocao {
+    width: 200px;
+    border: 3px solid rgb(160,1,1);
+    margin-bottom: 15px;
+}
+
+#saoJoao{
+    width: 250px;
+}
+
+.subTitulo-promocao {
+    margin-top: 10px;
+    font-size:0.96rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 7px;
+    border: 4px dotted rgb(160,1,1, 0.8);
+    width: 60%;
+    text-align: center;
+}
+
+/*  */
+
+#div-categorias {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    width: 80%;
+}
+
+#titulo-categorias {
+    margin-left: 5vw;
+    color: #fff;
+    padding: 0 20px 3px 20px;
+    border-bottom: 3px solid rgb(221, 101, 101);
     width: fit-content;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+}
+
+#categorias {
+    margin-top: 10vh;
+    display: flex;
+}
+
+#categorias a {
+    color: black;
+    text-decoration: none;
+    height: 15vh;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+}
+
+#vinho:hover{
+    background-color: rgb(66, 0, 20);
+    transition: 0.2s;
+    border: 3px groove #fff;
+    color: darkgrey;
+}
+
+#whisky:hover{
+    background-color: rgb(192, 113, 22);
+    transition: 0.2s;
+    border: 3px groove #fff;
+    color: darkgrey;
+}
+
+#vodka:hover{
+    background-color: rgb(0, 35, 100);
+    transition: 0.2s;
+    border: 3px groove #fff;
+    color: darkgrey;
+}
+
+#categorias a h1 {
+    font-size: 2rem;
+}
+
+/*  */
+
+#previa-catalogo {
+    width: 94%;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+#previa-catalogo h1 {
+    color: #fff;
+    text-align: center;
+    border-bottom: 4px double #fff;
+    width: fit-content;
+    padding: 0 20px 3px 20px;
+}
+
+#previa-style {
+    display: flex;
+    margin-top: 5vh;
+}
+
+#previa-produto {
+    padding: 15px;
+    text-align: center;
+}
+
+.produto-foto {
+    width: 180px;
+    border: 5px solid rgb(221, 101, 101);
+    padding: 10px;
+    background-color: #fff;
+}
+
+.infos-produto {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.info {
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+#div-botao {
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+#div-botao button {
+    height: 50px;
+    width: 130px;
+    background-color: rgb(160,1,1);
+    color: #fff;
+    border: 2px #fff solid;
+    font-size: 1.1rem;
+}
+
+#div-botao button:hover {
+    background-color: rgb(107, 0, 0);
+    color: darkgrey;
+}
+
+/*  */
+
+@media(max-width:1100px){
+    #promocoes-style {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .anuncio-promocao {
+        margin-bottom: 30px;
+    }
+    
+    #previa-style{
+        display: flex;
+        flex-direction: column;
+    }
 }

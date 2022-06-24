@@ -31,8 +31,8 @@
 }
 
 .botao-escolha {
-    height: 7vh;
-    width: 14vw;
+    height: 60px;
+    width: 200px;
     margin: 20px;
     font-size: 1.1rem;
     color: #fff;
@@ -63,8 +63,8 @@ button:hover {
 
 #botao-comprar {
     margin-top: 5vh;
-    height: 7vh;
-    width: 16vw;
+    height: 55px;
+    width: 200px;
     font-size: 1.1rem;
     color: #fff;
     background-color: rgb(160, 1, 1);
